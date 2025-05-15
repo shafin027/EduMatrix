@@ -1,0 +1,39 @@
+.card-bg {
+    /* No gradient overlay, image will show directly */
+}
+.card-text {
+    background: rgba(255, 255, 255, 0.9);
+}
+img {
+    transition: opacity 0.3s ease;
+}
+img:hover {
+    opacity: 0.9;
+}
+body {
+    background-color: #f3f4f6;
+}
+.transform {
+    transition: all 0.3s ease-in-out;
+}
+.hover\:scale-105:hover {
+    transform: scale(1.05);
+}
+.hover\:shadow-xl:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+.course-card {
+    width: 100%;
+    height: 400px; /* Fixed height for proportionality */
+}
+.course-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+header nav a {
+    transition: all 0.3s ease-in-out;
+}
+header nav a:hover {
+    transform: translateY(-2px);
+}

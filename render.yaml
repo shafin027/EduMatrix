@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: edu-matrix
+    env: php
+    repo: https://github.com/yourusername/edu-matrix.git
+    plan: free
+    branch: main
+    rootDir: .
+    buildCommand: ""
+    startCommand: "php -S 0.0.0.0:8000"
+    envVars:
+      - key: DB_HOST
+        value: mysql-edu-matrix-db-youraccount.aivencloud.com # Replace with Aiven host
+      - key: DB_PORT
+        value: 12345 # Replace with Aiven port
+      - key: DB_USER
+        value: avnadmin # Replace with Aiven username
+      - key: DB_PASSWORD
+        value: yourpassword # Replace with Aiven password
+      - key: DB_NAME
+        value: edumatrix
